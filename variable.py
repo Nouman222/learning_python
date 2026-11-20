@@ -23,6 +23,10 @@ print(dname,".@gmail.com")
 
 
 # Data type every value that assign to variable that will in different data type like
+# each value have a datatype this help python how to handle the value
+# python automatculy detect datatype
+# datatype can change anytime
+
 a = 50 # This is int means integer datatype 
 b = 3.14 # this is float datatype
 name = "Nouman" # this is string datatype
