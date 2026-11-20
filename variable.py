@@ -20,3 +20,20 @@ print(name, "want to become", language, "expert")
 
 dname = "khan"
 print(dname,".@gmail.com")
+
+
+# Data type every value that assign to variable that will in different data type like
+a = 50 # This is int means integer datatype 
+b = 3.14 # this is float datatype
+name = "Nouman" # this is string datatype
+pa = True # this is bolean datatype
+std = None # this is empty none datatype
+# these all datatype is called permitive datatype
+fname = "" #this is not none datatype it is str 
+fname = " " # This is also str but have space
+
+x = 50 # int
+y = 3.14 # float
+z = None # None
+fail = False # Boolean
+
