@@ -40,3 +40,18 @@ else:
 # Password must not contain spaces
 # Password must start and end with a letter or digit
 
+password = ""
+password = password.strip()
+
+if password == "":
+    print("Password must not be empty")
+elif len(password) < 8:
+    print("Password must be at least 8 characters")
+elif password == email:
+    print("Password must not be same as the email")
+elif password.count(" ") >= 1:
+    print("Password must not contain spaces")
+elif not (password[0].isalnum() and password[-1].isalnum()):
+    print("Password must start and end with a letter or digit")
+else:
+    print("Password created")
