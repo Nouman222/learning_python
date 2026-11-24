@@ -1,0 +1,52 @@
+# ======== for loop ========
+for i in (1, 2, 3, 4, 5):
+    print(f"Round: {i}")
+
+rounds = (1, 2, 3, 4, 5)
+
+for round in rounds:
+    print(f"Round: {round}")
+
+for i in range(5):  # same like the above but it start from zero
+    print(f"Round: {i}")
+
+for i in range(2,10):  # same like the above but here the start and end we declear
+    print(f"Round: {i}") 
+
+for i in range(0,10,2):  # here it will start from 0 and take 2 step and end on 10 but it will not include and here the 9 will also not print because it take 2 step after 8 is 10 and 10 is not include
+    print(f"Round: {i}") 
+
+
+name = "Nouman"
+for chr in name:
+    print(chr)
+
+heros_name = ["nomi","khan","khalil","afridi","Pakistani"]
+for name in heros_name:
+    print(name)
+
+# =============================================================
+scores = [85,90,75,80,99,100]
+total = 0
+
+for score in scores:
+    # total = total + score
+    total += score
+    print(f"current total score: {total}")
+
+print(f"final total score: {total}")
+
+# =============================================================
+
+files = ["  Reporting.csv ", "DATA.csv "," final.TXT"]
+
+for file in files:
+    file = file.strip().lower().replace(".txt","csv")
+    print(f"File: {file}")
+
+# =============================================================
+
+# print the 7 times table from 1 to 10
+for i in range(7,71,7):
+    print(i)
+
