@@ -78,3 +78,53 @@ for name in names:
     if name == "":
         pass
 print(name)
+# =====================================
+# ============= Task ==================
+
+# print doublicate found if exists other wise print all files are unique
+file_list = ["report.csv", "data.xlsx", "summary.docx", "report.csv", "data.csv"]
+
+seen = []
+duplicate_found = False
+
+for file in file_list:
+    if file in seen:
+        duplicate_found = True
+        break
+    seen.append(file)
+
+if duplicate_found:
+    print("Duplicate found")
+else:
+    print("All files are unique")
+
+
+# file_list = ["report.csv", "data.xlsx", "summary.docx", "report.csv", "data.csv"]
+
+# duplicate_found = False
+
+# for file in file_list:
+#     if file_list.count(file) > 1:
+#         duplicate_found = True
+#         break
+
+# if duplicate_found:
+#     print("Duplicate found")
+# else:
+#     print("All files are unique")
+
+# ============================= Nested for loop ============================
+
+# one loop inside the loop 
+for x in range(3): # This is the outer loop
+    for y in range(2): # This is the inner loop
+        print(f"({x},{y})")
+
+years = ["2026","2027"]
+months = ["Jan","Feb"]
+
+for y in years:
+    for m in months:
+        for d in range(1,28):
+            print(f"File_{y}_{m}_{d}.csv")
+
