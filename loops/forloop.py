@@ -50,3 +50,31 @@ for file in files:
 for i in range(7,71,7):
     print(i)
 
+# ======================= loop control =========================
+
+# ========= Break statment ========
+# it stop the loop immediatly it jump out and end the loop right away
+
+heros_name = ["nomi","khan","khalil","afridi","Pakistani"]
+for name in heros_name:
+    if name == "khalil" or name == "afridi":
+        print("Unknown names detected")
+        break
+    print(name)
+
+# ========== continue statment ======
+# it skip one loop cycle without stoping the loop 
+names = ["nomi","khan","","Pakistani"]
+for name in names:
+    if name == "":
+        print("Empty value detective")
+        continue
+print(name)
+
+# ======== pass statment ========
+# it just pass not skipping or ending the loop it is just like place holder
+names = ["nomi","khan","","Pakistani"]
+for name in names:
+    if name == "":
+        pass
+print(name)
